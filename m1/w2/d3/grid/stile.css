@@ -1,0 +1,35 @@
+
+
+
+header{
+    grid-area: header;
+    background-color: yellow;
+
+}
+main{
+    grid-area: main;
+    background-color: orange;
+
+
+}
+aside{
+    grid-area: aside;
+    background-color: green;
+
+
+}
+footer{
+    grid-area: footer;
+    background-color: yellow;
+
+
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'main main aside'
+    'footer footer footer';
+    min-height: 100vh;
+    grid-template-rows: 70px auto 70px;
+}

@@ -1,0 +1,22 @@
+
+/*general styles */
+
+h1 {
+    font-weight: bold;
+    font-size: 18px;
+
+}
+h1,h2,h3,h3,h4,h5 {
+    font-wieght: bold;
+}
+h1{
+
+    font-style: italic;
+}
+
+
+/*header=====*/
+
+header{
+    background-color: red;
+}

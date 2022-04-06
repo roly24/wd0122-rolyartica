@@ -1,0 +1,33 @@
+@media (max-width:1200px){
+    .blog{
+        width: 1024px;
+        margin: 0 auto;
+
+    }
+
+}
+@media (max-width:1024px){
+    .blog{
+        width: 768px;
+        
+    }
+    .bocco{
+        width: calc(100% / 3 - 2px);
+    }
+
+}
+@media (max-width:768px) and (min-width:481px){
+    .blog{
+        width: 100%;
+        
+    }
+    .bocco{
+        width: calc(100% - 2px);
+    }
+
+}
+@media (max-width:480px){
+
+
+
+}

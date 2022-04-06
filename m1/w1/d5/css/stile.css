@@ -1,0 +1,41 @@
+/*stili di genere*/
+
+body{
+    color:
+
+}
+
+h1{
+    color:
+
+}
+
+
+
+
+i{
+    font-size: 20rem;
+    color: red
+
+}
+
+
+
+.bottone{
+    background-color: #f04c2f;
+    font-family:
+    font-weight:
+    color
+    text-decoration: none;
+    padding: 15px 30px;
+    border: radius 5px;
+
+}
+
+#notebook{
+    margin: 0 auto;
+    background-color: #ccc;
+    width: calc(100% - 70px);
+    border-radius: 100%;
+    overflow: hidden
+}
