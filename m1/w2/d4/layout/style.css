@@ -1,0 +1,44 @@
+
+@media screen and ( min-width: 1024px ){
+    
+
+
+.container{
+    width:1200px
+}
+
+.container-small{
+    width:800px;
+    margin:0 auto;
+}
+
+}
+
+@media screen and ( min-width: 768px ){
+    
+
+
+    .container{
+        width:900px
+    }
+    
+    .container-small{
+        width:700px;
+        margin:0 auto;
+    }
+    
+}
+@media screen and ( min-width: px ){
+    
+
+
+    .container{
+        width:1200px
+    }
+    
+    .container-small{
+        width:800px;
+        margin:0 auto;
+    }
+    
+}
