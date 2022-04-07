@@ -1,0 +1,79 @@
+/*stili di genere*/
+header{
+       
+    background-color: black;
+    
+}
+
+
+
+body{
+    color:#393d41;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+   
+
+}
+
+main{
+    text-align: center;
+
+}
+
+.primo{
+    border: #dee1e3;
+    padding: 25px;
+    background-image: url('banner.jpg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    padding: 20px;
+
+}
+
+
+
+
+
+i{
+    font-size: 1rem;
+    color: #c8e7f0
+
+}
+
+
+
+.bottone{
+    background-color: #f04c2f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: auto;
+    text-decoration: none;
+    padding: 15px 30px;
+    border: radius 5px;
+
+}
+
+#notebook{
+    margin: auto;
+    background-color: #ccc;
+    width: fit-content;
+    border-radius: 100%;
+    overflow: hidden;
+   
+}
+
+footer{
+   
+}
+
+.headerfooter{
+    color: white;
+    background-color: #25a2c3;
+    
+}
