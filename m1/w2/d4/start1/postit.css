@@ -1,0 +1,74 @@
+#lavagna{
+    background-color: grey;
+    width:1000px;
+    height:500px;
+    padding:auto;
+    
+    
+
+}
+.postit{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 30px;
+    font-size: 22px;
+    gap: 17px;
+   
+}
+.post1, .post5, .post7{
+
+    background-color: rgb(230, 230, 150);
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 5px  5px 5px black;
+    transform: rotate(-10deg);
+    transition: 2s;
+  
+
+  
+}
+
+.post2, .post4, .post8{
+    background-color:rgb(182, 249, 182);
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 5px  5px 5px black;
+    transform: rotate(5deg);
+    transition: 2s;
+
+}
+
+.post3, .post6{
+    background-color:rgb(168, 142, 252);
+        width: 200px;
+        height: 150px;
+        margin: 10px;
+        border: 1px solid black;
+        box-shadow: 5px  5px 5px black;
+        transform: rotate(-10deg);
+        transition: 2s;
+}
+
+  .post1:hover{
+      transform: scale(1,1.5);
+  }
+
+.post1{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+ 
+
+}
+
+.post1.h2{
+    margin-bottom: 20px;
+}
+
+    
+
