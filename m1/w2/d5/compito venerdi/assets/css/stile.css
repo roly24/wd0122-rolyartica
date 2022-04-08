@@ -1,0 +1,221 @@
+/* IMPOSTAZIONI GENERALI */
+
+.buttonstyle{
+    background:linear-gradient(90deg, #6cc1e2 0, #392f7a);
+    padding: 1.2rem 1.6rem;
+    border:1px none;
+    border-radius: 3.5%;
+    overflow:hidden;
+    color: white;
+    text-decoration: none;
+    font-size: 1.9rem;
+    
+   
+
+
+}
+
+i{
+    color:#e42424;
+}
+
+#banner a.buttonstyle{
+    animation: pulse 1.5s infinite;
+    
+}
+
+body {
+    text-align:center;
+    font-family:'Fira sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+h1{font-size:4rem;}
+h2{font-size:3.5rem;}
+h3{font-size:2.5rem;}
+h4{font-size:2rem;}
+p{margin:1rem;}
+
+footer .buttonstyle{
+    
+    padding:1rem 0rem 1rem 0rem;
+    display:inline-block;
+}
+
+
+
+
+
+
+/* HEADER */
+
+header{
+    padding: 1em;
+    box-shadow:#d3d3d3 0px 2px 15px;
+    background-color:white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:center;
+    line-height: 1.2;
+    width: 100%;
+   
+   
+
+}
+
+header img{
+   position: absolute;
+   justify-content: space-evenly;
+
+
+}
+
+.div1{
+    text-align:center;
+    background-image: url(../images/banner.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+
+}
+#menu{
+    background-color: white;
+    height: 0;
+    overflow:hidden;
+    transition: height 0.5s;
+    position: right;
+}
+#apri-menu{
+    display: flex;
+    align-items: right;
+}
+input:checked + #menu{
+    height: 100px;
+}
+div.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+/* MAIN */
+
+.domande{
+    background-color: #0c0633;
+    color:white;
+    text-align: center;
+    padding:5vh;
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+
+
+div.container1{
+    
+    color:black;
+    text-align: center;
+    padding:5vh;
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+   
+
+
+
+#banner{
+    background-image: url(../images/banner.jpg);
+  
+    background-size: cover;
+}
+.div1{
+    color: white;
+    text-align: center;
+}
+
+/* FOOTER */
+
+address{
+    margin-top:100px;
+    text-align: center;
+}
+
+
+
+/* RESPONSIVE */
+
+
+@media screen and(min-width:500px){
+
+html{
+    font-size: 70%;
+
+   
+}
+
+    body{
+  line-height: 1.8
+}
+
+h1, h2, h3, h4{
+    line-height: 1;
+
+}
+#prezzo-corsi #prezzo-mobile{
+    display: inline;
+}
+#prezzo-corsi #prezzo-large{
+    display:none;
+}
+   
+
+}
+@media screen and(min-width:800px){
+
+    html{
+        font-size: 80%;
+    }
+    body{
+        line-height: 2;
+
+    }
+    h1, h2, h3, h4{
+        line-height:1.1;
+    }
+    #prezzo-corsi #prezzo-mobile{
+        display: none;
+    }
+    #prezzo-corsi #prezzo-large{
+        display:inline;
+    }
+
+}
+@media screen and(min-width:1200px){
+    html{
+        font-size:100%;
+    }
+    body{
+        line-height:2.4
+    }
+
+    h1, h2, h3, h4{
+        line-height: 2.4;
+
+    }
+
+    header, main, footer{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}
+
+
