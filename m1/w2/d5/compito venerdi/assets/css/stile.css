@@ -34,16 +34,20 @@
   }
 }
   
+ a{ 
+    text-decoration: none;
+  
     
+
+ }   
 
 
 nav{
     position: sticky;
     display: flex;
     justify-content: space-between;
-    align-content: stretch;
     flex-wrap: nowrap;
-    align-items: flex-start
+    align-items: center;
    }
 
 .lni{
@@ -64,18 +68,18 @@ h1{font-size:2.7rem;
   line-height: 1;
   
 }
-h2{font-size:1rem;
+h2{font-size:1,9rem;
     margin-top:10px;
     margin-bottom:10px;
     line-height: 1.1;}
-h3{font-size:1rem;}
+h3{font-size:1.5rem;}
 h4{font-size:1rem;}
 p{  
    padding-left: 20px;
    padding-right: 15px;
    
     text-align: center;
-    font-size: 15px;
+    font-size: 1.1rem;
     margin:0,1rem;}
 
 
@@ -102,6 +106,7 @@ footer .buttonstyle{
 .lista{
     display: inline-block;
     position: left;
+  
 }
 
 
@@ -117,22 +122,22 @@ header{
    
 div.presentazione{
     height:360px;
-    padding-top: 0px;
+  
     box-shadow: #d3d3d3;
 }
 /* cambiare nella media queri */
 .presentazione h1{
-
+    font-size: 2.5rem;
     width: 100%;
     padding-top: 20px;
     padding-left: 20px;
-   
     text-align:start;
     text-shadow: 2px 2px 2px black;
 }
 
 .presentazione p{
    width: 300px;
+   width: 100%;
     margin-top: 1px;
     text-align:start;
     font-size: 0.8rem;
@@ -195,7 +200,7 @@ input:checked + #menu{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: baseline;
 
 }
 
@@ -204,10 +209,12 @@ input:checked + #menu{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width:80%;
     height:100%;
     gap: 10px;
+
+    
 }
 
 .bottom.notebook{
@@ -224,7 +231,7 @@ input:checked + #menu{
 }
 
 .top-developer h1{
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .mid{
@@ -236,6 +243,7 @@ input:checked + #menu{
 }
 
 .trefrasi{
+   padding-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -267,6 +275,9 @@ address{
     margin-top:0;
     text-align: center;
 }
+address p{
+    font-size: 0.7rem
+}
 
 
 
@@ -274,9 +285,15 @@ address{
 
 @media screen and (min-width: 768px) {
     .top-flex{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+
+        display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       align-items: baseline;
+      
+       }  
+        
+    
     .bottom{     
         display: flex;
         flex-direction: row;
@@ -286,23 +303,58 @@ address{
         display: flex;
         flex-direction:row;
        justify-content: space-around;
-    
+   
     
     }
-    @media screen and (min-width: 600px) {
+    p{  
+        padding-left: 20px;
+        padding-right: 15px;
+        
+         text-align: center;
+         font-size: 1.2rem;
+         margin:0,1rem;}
+
+    .presentazione p{
+            width: 300px;
+            width: 100%;
+             margin-top: 1px;
+             text-align:start;
+             font-size: 1.1rem;
+             text-shadow: 2px 2px 2px black;
+           
+         }
+      
+ 
         header{
             width: 100%;
+            
            
         }
         div.presentazione{
             height:350px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 70px 
          
+            
+        
+      
+
+        
+        }
+        nav{
+            display: flex;
+            align-items: start;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: flex-end;
+            justify-content: space-around;
         }
         
-
-
-    }
-   
+        address p{
+            font-size: 1rem;
+        } 
+         
 
     
         
