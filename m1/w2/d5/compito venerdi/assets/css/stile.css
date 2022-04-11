@@ -281,6 +281,92 @@ address p{
 
 
 
+
+/* stili chi siamo*/
+
+body {
+    text-align: center;
+}
+
+.tabella{
+
+    padding-right: 0;
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+ 
+}
+table{
+    width:  320px;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+ th{
+   
+    padding-left: 5px;
+    padding-bottom: 20px;
+   
+}
+tr{
+    padding-left:5px;
+  
+}
+
+tr.color{
+    
+    background-color: rgb(140, 192, 202)
+}
+.tittle{
+    padding-top: 100px;
+}
+.foto-c p{
+   
+    font-size: 0.7rem;
+    
+
+
+}
+.foto-c{
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    line-height: 1.8;
+    gap: 2rem;
+     padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+  
+  
+}
+
+#address{
+    display: block;
+}
+.coder h1{
+    padding-top:10%;
+    font-size:1.9rem;
+}
+.coder p{
+
+    font-size:0.7rem;
+    padding-bottom: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+
+
+
+
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 768px) {
@@ -355,6 +441,20 @@ address p{
             font-size: 1rem;
         } 
          
+
+        .c-top{
+            margin: auto;
+            display:flex;
+            flex-direction: row;
+           
+        
+            line-height: 1.8;
+            gap: 2rem;
+             padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 10%;
+            
+          
 
     
         
