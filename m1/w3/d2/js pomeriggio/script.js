@@ -1,61 +1,48 @@
-let nome = "Mirtilla";
-console.log(nome);
-var utente = "cliente";
-console.log(utente);
-const PI = 3.14;
-console.log(PI);
+var x = 10;
+var y = 30;
+const z = 10;
 
-//nome = "Lilla";
-console.log(nome);
-utente = "amministratore";
-console.log(utente);
-//PI = 4;
-//console.log(PI);
+console.log(x, y, z);
 
-let primoLavoro = "developing";
-let secondoLavoro = "formazione";
+x++;
+y++;
 
-let lavoro = primoLavoro + " e " + secondoLavoro;
 
-console.log('io mi occupo di: ' + lavoro);
-console.log('io mi occupo di: ' + primoLavoro + " e " + secondoLavoro);
 
-let JS = true;
-console.log('Let JS: ' + JS);
+console.log(x, y, z);
 
-let anno;
-console.log(anno);
+y = x + z 
+console.log(y);
+console.log(x, y, z);
 
-anno = 1991;
+{
 
-const annoAttuale = 2021;
+var y = 20
+let x =10
+console.log(x*5)
+console.log(y*5)
 
-let anniMirtilla = annoAttuale - anno;
-console.log(anniMirtilla);
+}
+if (y<5){
+    console.log("è minore");
+} else {
+    console.log("è maggiore/uguale");
+}
 
-console.log(nome + " ha: " + anniMirtilla + " anni");
 
-let a = 10 + 5;
-let b = 3;
-let c = 10;
-let somma = b + c + 2;
-console.log(somma);
 
-c++;
-console.log(c);
-a--;
-console.log(a);
 
-let nomePet = "Billo";
-let colorePet = "rosso";
-const pet = "il nome del pet: " + nomePet + "e il suo colore è: " + colorePet;
-console.log(pet);
 
-// sintassi letterale con backtick -> apice inverso
-const pet1 = `il nome del pet: ${nomePet}  e il suo colore è: ${colorePet}`;
-console.log(pet1);
+function f(){
+    var y = 20
+let x =10
+console.log(x*5)
+console.log(y*5)
 
-console.log('string con \n\ righe \n\ multiple');
-console.log(`string con 
-righe 
-multiple`);
+}
+
+f()
+console.log(f)
+
+// .........//
+
