@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCOLATRICE</title>
+    
+    <link rel="stylesheet" href="style.css"></link>
+    
+</head>
+<body>
+    <div id="calculator" class="calculadora">
+    <input class="display" type="text" id="display">
+
+    <div class="calculator">
+    <div>
+    <button onclick="aggiungiNumero(this)">1</button>
+    <button onclick="aggiungiNumero(this)">2</button>
+    <button onclick="aggiungiNumero(this)">3</button>
+    <button data-numero=":" onclick="aggiungiNumero(this)">/</button>
+    </div>
+    <div>
+    <button onclick="aggiungiNumero(this)">4</button>
+    <button onclick="aggiungiNumero(this)">5</button>
+    <button onclick="aggiungiNumero(this)">6</button>
+    <button data-numero="*" onclick="moltiplicazione(this)">X</button>
+    </div>
+    <div>
+    <button onclick="aggiungiNumero(this)">7</button>
+    <button onclick="aggiungiNumero(this)">8</button>
+    <button onclick="aggiungiNumero(this)">9</button>
+    <button onclick="aggiungiNumero(this)">-</button>
+    <div>
+    <button onclick="aggiungiNumero(this)">.</button>
+    <button onclick="aggiungiNumero(this)">0</button>
+    
+   
+    <button onclick="cancella()">C</button>
+    <button onclick="aggiungiNumero(this)">+</button>
+
+ 
+    <div>
+    <button class="uguale" onclick="risultato()">=</button>
+    </div>
+    </div>
+    </div>
+
+   
+    
+
+ 
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
