@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script> 
+    let now = new Date();
+    console.log(now);  //*data attuale
+    console.log(now.getTime()); //*time stamp
+    console.log(now.getFullYear()); //numero del anno
+
+    let future = new Date()
+    console.log(future); 
+
+    let futureMinutes = future.getMinutes();
+    future.setMinutes( futureMinutes + 15)
+
+    console.log(future);
+
+
+    if(now.getTime() < future.getTime()){}
+
+    /*intervalli */    
+
+    setInterval(function(){
+        let n = new Date();
+        document.querySelector('#secondi').innerHTML = n.getSeconds()},1000)
+
+    
+    </script>
+</body>
+</html>
