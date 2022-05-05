@@ -1,0 +1,116 @@
+@import 'functions';
+
+
+
+@mixin testi($peso, $bg){
+    margin-top: 10px;
+    color:#808080;
+    padding: 15px;
+    font-weight:#{$pesp};
+    background-color: #{$bg};
+
+}
+@mixin colore($modifica,$valore){
+    #{$modifica}color:$valore
+}
+
+h1{
+    // margin-top: 10px;
+    // color:#808080;
+    font-size:1.5rem;
+    @include testi(bold,#fff);
+
+/*@media screen and (min-width:768px){
+    h1{
+        font-size:2rem;
+    }
+    @media screen and (min-width:1440px){
+        font-size: 4rem;
+    }
+*/
+
+@mixin breakpoints($misura, $content){
+    @if $misura == desktop{
+        @media screen and (min-width: 1440px){
+           #{$key}:$value;
+        }
+    }
+    @else if $misura == tablet{
+        @media screen and (min-width: 768px){
+            #{$key}:$value;
+        }
+   
+}
+
+    &:hover{
+        background-color:red;
+        color: set-color 
+    }
+    &:after{
+        content:">";
+    }
+}
+
+p{
+    // margin-top: 10px;
+    // color:#808080;
+    font-size: 1rem;
+    @include testi(400,green);
+}
+
+#p1{
+    @include colore ('',red);
+    height : calc(200px/2);
+}
+#p2{
+
+    @include colore('background-',red);
+    color: #fff;
+    width:miafunzione(3);
+}
+
+$sfondo : yellow;
+#d1{
+    background-color:$sfondo;
+    color: set-color($sfondo)
+}
+
+.main_div{ 
+    margin: 5px;
+    border-top: 1px solid #ccc;
+    width: 250px;
+
+}
+
+.special_div{
+    @extend .main_div;
+    height: 250px;
+    margin-left:auto;
+
+}
+
+/*cicli*/
+
+$misure: 5px,20px;
+@for $i from 1 to 3{
+    .bordo#{$i}{
+        border-top: 3px*$i solid #000
+    }
+}
+
+$misure: 15px,30px,45px;
+@each $misura in $misure{
+
+    .ml-#{$misura}{
+        margin-left: $misura;
+    }
+    .mr-#{$misura}{
+        margin-left: $misura;
+    }
+    .mt-#{$misura}{
+        margin-left: $misura;
+    }
+    .mb-#{$misura}{
+        margin-left: $misura;
+    }
+}}
