@@ -1,1 +1,90 @@
-body{background:$white}
+
+@function set-color-pro($sfondo,$colore){
+    @if(lightness($sfondo) >= 50){
+        @return black;
+    }@else{
+        @return white;
+    }
+        
+    }
+$primario: rgb(32, 32, 212);
+$secondario:rgb(114, 20, 161);
+
+@mixin flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+@mixin bottone {
+    border:2px outset grey;
+    color:white;
+    background-color:orange;
+    padding:10px;
+    
+}
+
+@mixin test-spec{
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+
+body{
+    font-family: 'Roboto', 
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#main{
+   @include flex;
+   padding:3%;
+
+    article{
+        flex-basis: 75%;
+    }
+    aside{
+        flex-basis: 25%;
+    }
+    a{
+        @include test-spec;
+        color:orange;
+    }
+    button{
+        @include bottone;
+    }
+
+
+}
+header {
+    border-color: $primario;
+    height:50px;
+    border-radius:15px;
+    padding:4px;
+    border: 3px ridge white solid;
+    ul{
+        li{
+            display: inline block;
+            margin-right:10px;
+            a{
+                color: set-color-pro($primario );
+                @include test-spec;
+            }
+        }
+    }
+
+}
+footer{
+    background-color: $secondario;
+    height:70px;
+
+}
+
+
+
+
+ @function set-color-pro($sfondo,$colore){
+    @if(lightness($sfondo) >= 50){
+        @return darken($colore,30%);
+    }@else{
+         @return lighten($colore,30%);
+     }
+}
