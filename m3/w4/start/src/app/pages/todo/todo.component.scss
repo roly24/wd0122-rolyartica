@@ -1,0 +1,24 @@
+input{
+  display:block;
+  margin-left:40vw;
+text-align:center;
+}
+
+.new{
+ 
+
+  background-color:green;
+  color: white;
+}
+
+.containers{
+  display: flex;
+  
+}
+
+.contain li {
+ padding-top: 1rem;
+  flex-direction:column;
+  text-align:center;
+
+}

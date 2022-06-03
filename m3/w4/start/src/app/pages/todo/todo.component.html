@@ -1,0 +1,22 @@
+
+
+<div class="containers">
+<input type="text" placeholder="inserisci qualcosa..."[(ngModel)]="title">
+
+
+<button class="new" (click)="saveTodo()">+</button>
+</div>
+
+<div class="contain">
+<ul>
+  <li *ngFor="let todo of todos">
+    {{ todo.title  }}
+    <button (click)="cancelTodo(todo.id)">❌</button>
+    <button (click)="doneTodo(todo.id)">✅</button>
+
+  </li>
+</ul>
+</div>
+
+
+

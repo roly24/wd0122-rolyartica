@@ -1,0 +1,4 @@
+<input type="text"[(ngModel)]='title'>
+<button (click)="saveTodo()">New task</button>
+
+<div *ngFor="let todo of todos">{{todo | json }}</div>
